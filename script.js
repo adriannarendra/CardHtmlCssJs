@@ -1,3 +1,4 @@
+alert("maaf kak, agak kecil, ana gak sengaja ngerjain pake zoom 150%")
 document.addEventListener('DOMContentLoaded', function() {
     const overlay = document.getElementById('overlay');
     const heartIcon = document.getElementById('heart-icon');
