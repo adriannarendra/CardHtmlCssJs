@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: poppins, 'sans';
+}
+
+:root{
+    --bg-color: #f9f9f9;
+    --text-color: black;
+    --text-size: 0.6rem;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+.card-container{
+    display: grid;
+    width: 100%;
+    height: 100dvh;
+    place-items: center;
+}
+
+.card{
+    display: grid;
+    place-items: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+    background: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+.top-btn{
+    position: absolute;
+    padding: 0.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-btn > a > *{
+    max-width: 1rem;
+}
+
+.card > img{
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 999rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0.25rem 0.75rem;
+    margin-bottom: 0.313rem;
+}
+
+.card > h2{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    line-height: 1.125rem;
+}
+
+.card > p{
+    font-size: var(--text-size);
+    font-weight: 300;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.313rem;
+}
+
+.socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+}
+
+.socials > a{
+    display: grid;
+    place-items: center;
+}
+
+.socials > a > *{
+    max-width: 1.2rem;
+    transition: .3s;
+}
+
+.socials > a > *:hover{
+    max-width: 1.2rem;
+    transition: .3s;
+    transform: scale(1.3);
+}
+
+.youtube{
+    fill: #FF0000;
+}
+
+.facebook{
+    fill: #4267B2;
+}
+
+.twitch{
+    fill: #6441A5;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+.btn > a{
+    color: var(--text-color);
+    text-align: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem; 
+    box-shadow: rgba(0, 0, 0, 0.02) 0 0.063rem 0.188rem 0, rgba(27, 31, 35, 0.15) 0 0 0 0.063rem;
+    width: 100%;
+    font-size: var(--text-size);
+    transition: .3s;
+}
+
+.btn > a:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0.122rem 0.122rem 0.163rem;
+}
+
+.other-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.other-btn > div{
+    display: flex;
+    font-size: var(--text-size);
+    place-items: center;
+    gap: 0.06rem;
+}
+
+.other-btn > div > svg{
+    cursor: pointer;
+    max-width: 1rem;
+    transition: fill 0.3s;
+}
+
+.filled-heart {
+    fill: red;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 0.3rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay-content {
+    padding: 1.25px;
+    border-radius: 0.313rem;
+    text-align: center;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.overlay a{
+    cursor: pointer;
+    transition: .3s;
+}
+
+#report-btn:hover{
+    color: red;
+}
+
+#save-btn:hover{
+    color: green;
+}
+
+#recruit-btn:hover{
+    color: blue;
+}
+
+#close-btn:hover{
+    color: rgb(0, 0, 0, 0.5);
+}
